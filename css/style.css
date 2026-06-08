@@ -1,11 +1,15 @@
 /* =========================
-   RESET
+   RESET & GLOBAL
 ========================= */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+section {
+    width: 100%;
+}
+
 /* =========================
    HEADER
 ========================= */
@@ -32,41 +40,70 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 7%;
-    background: white;
+    padding: 18px 7%;
+    background: #ffffff;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.06);
 }
 
 .logo h2 {
     color: #0d3b8e;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
 nav ul {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 30px;
 }
 
 nav a {
-    color: #222;
+    color: #1f2937;
     font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
 }
 
+nav a:hover {
+    color: #0d5bd7;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
 .btn-primary {
+    display: inline-block;
     background: #0d5bd7;
-    color: white;
+    color: #ffffff;
     padding: 14px 26px;
     border-radius: 10px;
-    font-weight: 600;
-    transition: 0.3s;
+    font-weight: 700;
+    transition: 0.3s ease;
 }
 
 .btn-primary:hover {
     background: #0846aa;
+    transform: translateY(-2px);
+}
+
+.btn-light {
+    display: inline-block;
+    background: #ffffff;
+    color: #083b91;
+    padding: 16px 28px;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+.btn-light:hover {
+    transform: translateY(-2px);
 }
 
 /* =========================
@@ -77,32 +114,40 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 70px 7%;
-    background: #eef4ff;
+    gap: 55px;
+    padding: 80px 7% 110px;
+    background: linear-gradient(135deg, #eef4ff 0%, #ffffff 100%);
 }
 
-.hero-content span {
+.hero-content span,
+.section-tag {
     color: #0d5bd7;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 800;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .hero-content h1 {
-    font-size: 4rem;
-    line-height: 1.1;
+    font-size: 3.6rem;
+    line-height: 1.08;
     margin: 20px 0;
     color: #0f1d40;
+    letter-spacing: -2px;
 }
 
 .hero-content p {
-    max-width: 550px;
-    font-size: 1.1rem;
+    max-width: 560px;
+    font-size: 1.08rem;
+    color: #4b5563;
     margin-bottom: 35px;
 }
 
 .hero-image img {
-    border-radius: 20px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 22px 55px rgba(13, 59, 142, 0.18);
 }
 
 /* =========================
@@ -111,27 +156,32 @@ nav a {
 
 .stats {
     width: 86%;
-    margin: -50px auto 80px;
-    background: white;
-    border-radius: 20px;
-    padding: 35px;
+    margin: -55px auto 85px;
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 34px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.09);
+    position: relative;
+    z-index: 2;
 }
 
 .stat-card {
     text-align: center;
+    padding: 8px;
 }
 
 .stat-card h3 {
     color: #0d3b8e;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 800;
 }
 
 .stat-card p {
-    color: #666;
+    color: #6b7280;
+    font-size: 0.95rem;
 }
 
 /* =========================
@@ -139,27 +189,34 @@ nav a {
 ========================= */
 
 .services {
-    padding: 80px 7%;
+    padding: 85px 7%;
 }
 
 .services h2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #0f1d40;
     margin-bottom: 50px;
+    letter-spacing: -1.5px;
 }
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .service-card {
-    background: white;
-    border-radius: 18px;
+    background: #ffffff;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
 }
 
 .service-card img {
@@ -168,56 +225,181 @@ nav a {
 }
 
 .service-card h3 {
-    padding: 20px 25px 10px;
+    padding: 24px 26px 10px;
     color: #0f1d40;
+    font-size: 1.3rem;
 }
 
 .service-card p {
-    padding: 0 25px 25px;
-    color: #666;
+    padding: 0 26px 28px;
+    color: #6b7280;
+    font-size: 0.98rem;
 }
 
 /* =========================
-   WHY LMV
+   WHY LMV / ABOUT SECTIONS
 ========================= */
 
 .why-lmv {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 55px;
     padding: 100px 7%;
     align-items: center;
+    background: #ffffff;
 }
 
 .why-content span {
     color: #0d5bd7;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
 }
 
 .why-content h2 {
-    font-size: 3rem;
-    margin: 15px 0 40px;
+    font-size: 2.8rem;
+    line-height: 1.15;
+    margin: 16px 0 35px;
     color: #0f1d40;
+    letter-spacing: -1.5px;
+}
+
+.why-content p {
+    color: #4b5563;
+    font-size: 1.03rem;
+    margin-bottom: 18px;
 }
 
 .features {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 }
 
 .feature {
-    background: #f8f9fc;
-    padding: 20px;
-    border-radius: 12px;
+    background: #f6f8fc;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #edf1f7;
 }
 
 .feature h4 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    color: #0f1d40;
+    font-size: 1.05rem;
 }
 
-.why-image img {
-    border-radius: 20px;
+.feature p {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.why-image img,
+.about-image img,
+.leadership-image img {
+    border-radius: 22px;
+    height: 430px;
+    object-fit: cover;
+    box-shadow: 0 18px 45px rgba(13, 59, 142, 0.14);
+}
+
+/* =========================
+   ABOUT / RESOURCES PAGES
+========================= */
+
+.container {
+    width: 86%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.about-hero {
+    padding: 95px 7%;
+    background: linear-gradient(135deg, #eef4ff 0%, #ffffff 100%);
+    text-align: center;
+}
+
+.about-hero h1 {
+    max-width: 850px;
+    margin: 18px auto;
+    font-size: 3.2rem;
+    line-height: 1.12;
+    color: #0f1d40;
+    letter-spacing: -1.5px;
+}
+
+.about-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #4b5563;
+    font-size: 1.08rem;
+}
+
+.about-section,
+.mission-section,
+.expertise-section,
+.leadership-section {
+    padding: 90px 7%;
+}
+
+.about-content,
+.leadership-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-text h2,
+.mission-section h2,
+.expertise-section h2,
+.leadership-text h2 {
+    font-size: 2.5rem;
+    color: #0f1d40;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.about-text p,
+.mission-section p,
+.leadership-text p {
+    color: #4b5563;
+    font-size: 1.03rem;
+    margin-bottom: 16px;
+}
+
+.mission-section {
+    background: #f6f8fc;
+    text-align: center;
+}
+
+.mission-section p {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.expertise-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #edf1f7;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.expertise-card h3 {
+    color: #0f1d40;
+    margin-bottom: 12px;
+}
+
+.expertise-card p {
+    color: #6b7280;
 }
 
 /* =========================
@@ -225,24 +407,24 @@ nav a {
 ========================= */
 
 .cta {
-    background: #083b91;
-    color: white;
-    padding: 70px 7%;
+    background: linear-gradient(135deg, #083b91 0%, #0d5bd7 100%);
+    color: #ffffff;
+    padding: 72px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 35px;
 }
 
 .cta h2 {
     font-size: 2.5rem;
+    line-height: 1.18;
+    margin-bottom: 10px;
 }
 
-.btn-light {
-    background: white;
-    color: #083b91;
-    padding: 16px 28px;
-    border-radius: 10px;
-    font-weight: 700;
+.cta p {
+    color: rgba(255, 255, 255, 0.88);
+    max-width: 650px;
 }
 
 /* =========================
@@ -251,26 +433,46 @@ nav a {
 
 .contact {
     padding: 90px 7%;
+    background: #ffffff;
 }
 
 .contact h2 {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 3rem;
+    margin-bottom: 38px;
+    font-size: 2.8rem;
+    color: #0f1d40;
+    letter-spacing: -1px;
 }
 
 .contact form {
-    max-width: 700px;
-    margin: auto;
+    max-width: 720px;
+    margin: 0 auto;
+    background: #f8fafc;
+    padding: 34px;
+    border-radius: 22px;
+    border: 1px solid #edf1f7;
 }
 
 .contact input,
 .contact textarea {
     width: 100%;
-    padding: 16px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 18px;
+    border: 1px solid #dbe3ef;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #0d5bd7;
 }
 
 .contact button {
@@ -278,10 +480,16 @@ nav a {
     padding: 16px;
     border: none;
     background: #0d5bd7;
-    color: white;
-    border-radius: 10px;
-    font-weight: 700;
+    color: #ffffff;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 1rem;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact button:hover {
+    background: #0846aa;
 }
 
 /* =========================
@@ -290,70 +498,64 @@ nav a {
 
 footer {
     background: #041f4d;
-    color: white;
+    color: #ffffff;
     text-align: center;
-    padding: 40px;
+    padding: 45px 7%;
 }
 
 footer h3 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
 }
 
 footer p {
-    opacity: 0.8;
+    opacity: 0.82;
+    max-width: 760px;
+    margin: 8px auto;
 }
 
 /* =========================
-   SCROLL ANIMATION
-========================= */
-
-.services,
-.why-lmv,
-.cta,
-.contact {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* =========================
-   RESPONSIVE DESIGN
+   RESPONSIVE - TABLET
 ========================= */
 
 @media (max-width: 1024px) {
+    header {
+        padding: 18px 5%;
+    }
 
     .hero {
         grid-template-columns: 1fr;
-        gap: 40px;
         text-align: center;
+        padding: 70px 5% 95px;
     }
 
     .hero-content p {
         margin: 0 auto 35px;
     }
 
+    .hero-image img {
+        height: 420px;
+    }
+
     .stats {
         grid-template-columns: repeat(2, 1fr);
+        width: 90%;
     }
 
-    .service-grid {
+    .service-grid,
+    .expertise-grid {
         grid-template-columns: 1fr;
     }
 
-    .why-lmv {
+    .why-lmv,
+    .about-content,
+    .leadership-content {
         grid-template-columns: 1fr;
-        gap: 40px;
     }
 
     .cta {
         flex-direction: column;
         text-align: center;
-        gap: 30px;
     }
 
     .features {
@@ -361,47 +563,84 @@ footer p {
     }
 }
 
-@media (max-width: 768px) {
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
 
+@media (max-width: 768px) {
     header {
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+        gap: 18px;
+        padding: 18px 20px;
+        position: relative;
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .logo h2 {
+        font-size: 1.25rem;
+        text-align: center;
     }
 
     .hero {
-        padding: 50px 20px;
+        padding: 55px 20px 85px;
+        gap: 35px;
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.45rem;
+        letter-spacing: -1px;
     }
 
     .hero-content p {
         font-size: 1rem;
     }
 
+    .hero-image img {
+        height: 300px;
+        border-radius: 18px;
+    }
+
     .stats {
-        width: 95%;
-        margin-top: 20px;
+        width: 92%;
+        margin: -45px auto 55px;
         grid-template-columns: 1fr;
+        padding: 26px;
     }
 
     .services,
     .why-lmv,
-    .contact {
-        padding: 60px 20px;
+    .contact,
+    .about-section,
+    .mission-section,
+    .expertise-section,
+    .leadership-section {
+        padding: 65px 20px;
     }
 
     .services h2,
     .why-content h2,
-    .contact h2 {
+    .contact h2,
+    .about-hero h1 {
+        font-size: 2.05rem;
+    }
+
+    .about-hero {
+        padding: 70px 20px;
+    }
+
+    .about-text h2,
+    .mission-section h2,
+    .expertise-section h2,
+    .leadership-text h2 {
         font-size: 2rem;
     }
 
@@ -409,44 +648,47 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .why-image img,
+    .about-image img,
+    .leadership-image img {
+        height: 300px;
+    }
+
     .cta {
-        padding: 50px 20px;
+        padding: 55px 20px;
     }
 
     .cta h2 {
         font-size: 2rem;
     }
 
-    .cta p {
-        text-align: center;
+    .contact form {
+        padding: 24px;
     }
 }
 
-@media (max-width: 480px) {
+/* =========================
+   RESPONSIVE - SMALL MOBILE
+========================= */
 
+@media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2rem;
     }
 
-    .logo h2 {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
     .btn-primary,
     .btn-light {
-        display: block;
-        width: 100%;
+        width: auto;
+        max-width: 100%;
         text-align: center;
     }
 
     .service-card img {
         height: 220px;
-        object-fit: cover;
     }
 
     .stat-card h3 {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
     }
 
     .services h2,
@@ -455,4 +697,3 @@ footer p {
         font-size: 1.8rem;
     }
 }
-
