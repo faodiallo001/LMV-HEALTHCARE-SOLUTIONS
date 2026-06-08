@@ -1,1 +1,304 @@
+/* =========================
+   RESET
+========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h2 {
+    color: #0d3b8e;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: #222;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #0d5bd7;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0846aa;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 70px 7%;
+    background: #eef4ff;
+}
+
+.hero-content span {
+    color: #0d5bd7;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 20px 0;
+    color: #0f1d40;
+}
+
+.hero-content p {
+    max-width: 550px;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+.hero-image img {
+    border-radius: 20px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    width: 86%;
+    margin: -50px auto 80px;
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.stat-card {
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #0d3b8e;
+    font-size: 2rem;
+}
+
+.stat-card p {
+    color: #666;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    padding: 80px 7%;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #0f1d40;
+    margin-bottom: 50px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.service-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    padding: 20px 25px 10px;
+    color: #0f1d40;
+}
+
+.service-card p {
+    padding: 0 25px 25px;
+    color: #666;
+}
+
+/* =========================
+   WHY LMV
+========================= */
+
+.why-lmv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 100px 7%;
+    align-items: center;
+}
+
+.why-content span {
+    color: #0d5bd7;
+    font-weight: 700;
+}
+
+.why-content h2 {
+    font-size: 3rem;
+    margin: 15px 0 40px;
+    color: #0f1d40;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.feature {
+    background: #f8f9fc;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.feature h4 {
+    margin-bottom: 10px;
+}
+
+.why-image img {
+    border-radius: 20px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    background: #083b91;
+    color: white;
+    padding: 70px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+}
+
+.btn-light {
+    background: white;
+    color: #083b91;
+    padding: 16px 28px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 90px 7%;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+.contact form {
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.contact button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background: #0d5bd7;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #041f4d;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    opacity: 0.8;
+}
