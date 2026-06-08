@@ -725,3 +725,214 @@ footer p {
         font-size: 1.8rem;
     }
 }
+/* =========================
+   CONSULTATION PAGE
+========================= */
+
+.consultation-page {
+    background: #061b3f;
+}
+
+.consultation-hero {
+    position: relative;
+    min-height: 78vh;
+    padding: 110px 7%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(120deg, rgba(4, 31, 77, 0.92), rgba(13, 91, 215, 0.55)),
+        url("images/hero-hospital.PNG") center/cover no-repeat;
+    overflow: hidden;
+}
+
+.consultation-hero::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    right: -120px;
+    top: 80px;
+    background: radial-gradient(circle, rgba(47, 155, 255, 0.45), transparent 70%);
+    filter: blur(10px);
+}
+
+.consultation-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1050px;
+}
+
+.consultation-content h1 {
+    max-width: 760px;
+    margin: 20px 0;
+    font-size: 4rem;
+    line-height: 1.05;
+    color: #ffffff;
+    letter-spacing: -2px;
+}
+
+.consultation-content p {
+    max-width: 690px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 1.1rem;
+}
+
+.consultation-glass-grid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.glass-card {
+    padding: 28px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(18px);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.glass-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.glass-card p {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.95rem;
+}
+
+.consultation-form-section {
+    padding: 90px 7%;
+    background:
+        radial-gradient(circle at top left, rgba(0, 119, 255, 0.18), transparent 34%),
+        linear-gradient(180deg, #061b3f 0%, #ffffff 100%);
+}
+
+.consultation-form-wrapper {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 42px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(22px);
+    box-shadow:
+        0 25px 70px rgba(0, 37, 96, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.form-intro h2 {
+    font-size: 2.7rem;
+    color: #0f1d40;
+    margin: 14px 0;
+    letter-spacing: -1px;
+}
+
+.form-intro p {
+    color: #4b5563;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.premium-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.premium-form input,
+.premium-form select,
+.premium-form textarea {
+    width: 100%;
+    padding: 17px 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(13, 91, 215, 0.18);
+    background: rgba(255, 255, 255, 0.85);
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+}
+
+.premium-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.premium-form input:focus,
+.premium-form select:focus,
+.premium-form textarea:focus {
+    border-color: #0d5bd7;
+    box-shadow: 0 0 0 4px rgba(13, 91, 215, 0.12);
+}
+
+.premium-form button {
+    margin-top: 6px;
+    padding: 17px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #0077ff 0%, #0057d9 45%, #003ea8 100%);
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow:
+        0 16px 36px rgba(0, 87, 217, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    transition: 0.3s ease;
+}
+
+.premium-form button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 22px rgba(0, 119, 255, 0.45),
+        0 22px 45px rgba(0, 87, 217, 0.45);
+}
+
+@media (max-width: 900px) {
+    .consultation-content h1 {
+        font-size: 3rem;
+    }
+
+    .consultation-glass-grid,
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .consultation-hero {
+        padding: 80px 20px;
+    }
+
+    .consultation-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .consultation-form-section {
+        padding: 60px 20px;
+    }
+
+    .consultation-form-wrapper {
+        padding: 26px;
+    }
+
+    .form-intro h2 {
+        font-size: 2rem;
+    }
+}
