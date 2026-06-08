@@ -302,3 +302,21 @@ footer h3 {
 footer p {
     opacity: 0.8;
 }
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.services,
+.why-lmv,
+.cta,
+.contact {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
