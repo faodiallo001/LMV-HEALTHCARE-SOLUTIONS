@@ -33,7 +33,7 @@ section {
 }
 
 .logo img {
-    width: 180px;
+    width: 220px;
     height: auto;
     display: block;
 }
@@ -162,7 +162,7 @@ nav a:hover {
 
     gap: 60px;
 
-    padding: 160px 7% 120px;
+    padding: 220px 7% 120px;
 
     background:
         radial-gradient(
