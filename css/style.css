@@ -258,6 +258,126 @@ box-shadow:
 
 }
 
+
+/* WHO WE SERVE */
+
+.who-we-serve{
+padding:120px 7%;
+display:grid;
+grid-template-columns:.9fr 1.1fr;
+gap:50px;
+align-items:center;
+background:#f8fbff;
+}
+
+.who-left span{
+color:#0d5bd7;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.who-left h2{
+font-size:3rem;
+line-height:1.1;
+color:#07142e;
+margin-top:20px;
+}
+
+.who-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.who-card{
+background:white;
+padding:35px;
+border-radius:22px;
+box-shadow:0 15px 40px rgba(0,0,0,.06);
+}
+
+.who-card h3{
+margin-bottom:15px;
+color:#07142e;
+}
+
+.who-card p{
+color:#6b7280;
+}
+
+/* STRATEGIC */
+
+.strategic-section{
+padding:120px 7%;
+background:white;
+}
+
+.strategic-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:60px;
+}
+
+.strategic-text h2{
+font-size:3rem;
+line-height:1.1;
+margin:20px 0;
+}
+
+.strategic-image img{
+height:520px;
+object-fit:cover;
+border-radius:30px;
+}
+
+/* EXPERTISE */
+
+.expertise-dark{
+padding:120px 7%;
+background:linear-gradient(
+135deg,
+#041f4d,
+#083b91
+);
+text-align:center;
+}
+
+.expertise-dark span{
+color:#8cc7ff;
+letter-spacing:2px;
+}
+
+.expertise-dark h2{
+color:white;
+font-size:3rem;
+margin:20px 0 60px;
+}
+
+.expertise-dark-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.expertise-dark-card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:22px;
+border:1px solid rgba(255,255,255,.12);
+text-align:left;
+}
+
+.expertise-dark-card h3{
+color:white;
+margin-bottom:15px;
+}
+
+.expertise-dark-card p{
+color:rgba(255,255,255,.75);
+}
+
 /* =========================
    STATS
 ========================= */
