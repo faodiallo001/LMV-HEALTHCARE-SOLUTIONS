@@ -982,6 +982,79 @@ footer p {
 }
 
 /* =========================
+   HOME NEW SECTIONS MOBILE
+========================= */
+
+@media (max-width: 1024px){
+
+    .who-we-serve{
+        grid-template-columns:1fr;
+    }
+
+    .who-grid{
+        grid-template-columns:1fr;
+    }
+
+    .strategic-content{
+        grid-template-columns:1fr;
+    }
+
+    .expertise-dark-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .who-we-serve,
+    .strategic-section,
+    .expertise-dark{
+        padding:80px 20px;
+    }
+
+    .who-left h2,
+    .strategic-text h2,
+    .expertise-dark h2{
+        font-size:2.2rem;
+    }
+
+    .strategic-image img{
+        height:300px;
+    }
+
+    .expertise-dark-grid{
+        grid-template-columns:1fr;
+    }
+
+    .who-card,
+    .expertise-dark-card{
+        padding:28px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .who-left h2,
+    .strategic-text h2,
+    .expertise-dark h2{
+        font-size:1.9rem;
+        line-height:1.15;
+    }
+
+    .who-we-serve{
+        gap:30px;
+    }
+
+    .who-card h3,
+    .expertise-dark-card h3{
+        font-size:1.2rem;
+    }
+
+}
+
+/* =========================
    RESPONSIVE - MOBILE
 ========================= */
 
