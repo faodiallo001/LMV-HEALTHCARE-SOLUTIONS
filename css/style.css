@@ -563,7 +563,7 @@ box-shadow:
 .about-text p,
 .mission-section p,
 .leadership-text p {
-    color:white;
+    color:#4b5563;
     font-size: 1.03rem;
     margin-bottom: 16px;
 }
@@ -576,7 +576,7 @@ box-shadow:
 }
 
 .contact-text p{
-    color:#4b5563;
+    color:white;
     font-size:1.03rem;
     margin-bottom:16px;
 }
