@@ -1125,57 +1125,6 @@ footer p {
    RESPONSIVE - MOBILE
 ========================= */
 
-
-@media (max-width:768px){
-
-header{
-display:flex;
-flex-direction:column;
-padding:8px 20px;
-gap:6px;
-}
-
-.logo img{
-width:90px;
-}
-
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
-gap:14px;
-}
-
-nav a{
-font-size:.9rem;
-}
-
-.btn-light{
-padding:12px 20px;
-font-size:.9rem;
-}
-
-.hero{
-padding:220px 20px 80px;
-text-align:center;
-}
-
-.hero-content h1{
-font-size:2.4rem;
-line-height:1.1;
-}
-
-.hero-content .btn-primary{
-margin-top:20px;
-margin-bottom:45px;
-}
-
-.hero-image img{
-height:260px;
-border-radius:20px;
-}
-
-}
-
     .stats {
         width: 92%;
         margin: -45px auto 55px;
@@ -1283,6 +1232,86 @@ border-radius:20px;
         display: block;
     }
 }
+
+@media (max-width:768px){
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 20px;
+}
+
+.logo img{
+    width:115px;
+}
+
+.desktop-nav{
+    display:none;
+    position:absolute;
+    top:78px;
+    right:20px;
+    width:230px;
+    background:#061b3f;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:18px;
+    padding:20px;
+    z-index:9999;
+}
+
+.desktop-nav.active{
+    display:block;
+}
+
+.desktop-nav ul{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.menu-toggle{
+    display:block;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.hero{
+    grid-template-columns:1fr;
+    padding:170px 20px 80px;
+    text-align:center;
+    gap:35px;
+}
+
+.hero-content h1{
+    font-size:2.4rem;
+    line-height:1.1;
+    letter-spacing:-1px;
+}
+
+.hero-content p{
+    font-size:1rem;
+}
+
+.hero-content .btn-primary{
+    margin-bottom:45px;
+}
+
+.hero-image img{
+    height:260px;
+    border-radius:20px;
+}
+
+}
+
+
+
 /* =========================
    CONSULTATION PAGE
 ========================= */
