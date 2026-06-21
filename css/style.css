@@ -893,27 +893,32 @@ footer p {
         top: 0;
         left: 0;
         width: 100%;
-        min-height: 80px;
+
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 24px 20px;
+
+        padding: 20px 20px;
+        min-height: 80px;
     }
 
     .logo img {
         width: 140px;
+        height: auto;
     }
 
     .desktop-nav {
         display: none;
         position: absolute;
-        top: 78px;
+        top: 80px;
         right: 20px;
+
         width: 230px;
+
         background: #061b3f;
         border: 1px solid rgba(255,255,255,.12);
         border-radius: 18px;
+
         padding: 20px;
         z-index: 9999;
     }
@@ -930,10 +935,17 @@ footer p {
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         color: white;
-        font-size: 1.7rem;
+        font-size: 2.4rem;
+        line-height: 1;
+
         cursor: pointer;
+
+        transform: translateY(-3px);
     }
 
     .hero {
