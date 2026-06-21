@@ -14,11 +14,10 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #ffffff;
-    color: #1a1a1a;
+    background: #04152f;
+    color: #ffffff;
     line-height: 1.6;
 }
-
 img {
     width: 100%;
     display: block;
@@ -435,7 +434,13 @@ color:rgba(255,255,255,.75);
 
 .services{
 padding:120px 7%;
-background:#ffffff;
+
+background:
+linear-gradient(
+180deg,
+#04152f,
+#061b3f
+);
 }
 
 .services h2 {
@@ -459,21 +464,37 @@ background:#ffffff;
 
 .service-card{
 
-background:white;
+background:
+linear-gradient(
+135deg,
+rgba(255,255,255,.08),
+rgba(255,255,255,.03)
+);
+
+backdrop-filter:blur(20px);
+
+border:
+1px solid rgba(255,255,255,.12);
 
 padding:10px;
 
 border-radius:30px;
 
+overflow:hidden;
+
 box-shadow:
-0 20px 60px rgba(0,0,0,.06);
+0 20px 60px rgba(0,0,0,.25);
 
 transition:.4s;
 
-overflow:hidden;
+}
 
-border:1px solid #edf2f8;
+.service-card h3{
+color:white;
+}
 
+.service-card p{
+color:rgba(255,255,255,.75);
 }
 
 .service-card:hover{
@@ -488,19 +509,6 @@ box-shadow:
     object-fit: cover;
 }
 
-.service-card h3 {
-    padding: 24px 26px 10px;
-
-    color: #0f1d40;
-
-    font-size: 1.3rem;
-}
-
-.service-card p {
-    padding: 0 26px 24px;
-
-    color: #6b7280;
-}
 
 .service-card .btn-primary {
     margin: 0 26px 26px;
@@ -516,7 +524,12 @@ box-shadow:
     gap: 55px;
     padding: 100px 7%;
     align-items: center;
-    background: #ffffff;
+    background:
+linear-gradient(
+180deg,
+#061b3f,
+#04152f
+);
 }
 
 .why-content span {
@@ -531,12 +544,12 @@ box-shadow:
     font-size: 2.8rem;
     line-height: 1.15;
     margin: 16px 0 35px;
-    color: #0f1d40;
+    color: white;
     letter-spacing: -1.5px;
 }
 
 .why-content p {
-    color: #4b5563;
+    color: rgba(255,255,255,.75);
     font-size: 1.03rem;
     margin-bottom: 18px;
 }
