@@ -818,8 +818,38 @@ box-shadow:
    CTA
 ========================= */
 
+.cta .btn-light{
+
+background:
+linear-gradient(
+135deg,
+#0077ff,
+#0057d9
+);
+
+color:white;
+
+border:none;
+
+box-shadow:
+0 15px 40px rgba(0,119,255,.35);
+
+}
+
+.cta{
+border-top:1px solid #edf2f8;
+}
+
+.cta h2{
+color:#07142e;
+}
+
+.cta p{
+color:#6b7280;
+}
+
 .cta {
-    background: linear-gradient(135deg, #083b91 0%, #0d5bd7 100%);
+    background:#ffffff;
     color: #ffffff;
     padding: 72px 7%;
     display: flex;
