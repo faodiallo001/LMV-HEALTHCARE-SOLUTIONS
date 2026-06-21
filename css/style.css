@@ -969,6 +969,40 @@ footer p {
    RESPONSIVE - TABLET
 ========================= */
 
+@media (max-width:768px){
+
+    .desktop-nav{
+        display:none;
+        position:absolute;
+        top:80px;
+        right:20px;
+
+        width:220px;
+
+        background:#061b3f;
+
+        border-radius:20px;
+
+        padding:20px;
+    }
+
+    .desktop-nav.active{
+        display:block;
+    }
+
+    .desktop-nav ul{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:18px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+}
+
+
 @media (max-width: 1024px) {
     header {
         padding: 18px 5%;
