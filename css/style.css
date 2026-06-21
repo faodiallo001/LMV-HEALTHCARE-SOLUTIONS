@@ -893,6 +893,7 @@ footer p {
         top: 0;
         left: 0;
         width: 100%;
+        min-height: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -901,7 +902,7 @@ footer p {
     }
 
     .logo img {
-        width: 115px;
+        width: 140px;
     }
 
     .desktop-nav {
@@ -931,7 +932,7 @@ footer p {
     .menu-toggle {
         display: block;
         color: white;
-        font-size: 2rem;
+        font-size: 1.7rem;
         cursor: pointer;
     }
 
