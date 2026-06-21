@@ -31,11 +31,6 @@ section {
     width: 100%;
 }
 
-.logo img {
-    width: 220px;
-    height: auto;
-    display: block;
-}
 
 /* =========================
    HEADER
@@ -251,7 +246,7 @@ display:grid;
 grid-template-columns:.9fr 1.1fr;
 gap:50px;
 align-items:center;
-background:#f8fbff;
+background:linear-gradient(180deg,#061b3f,#04152f);
 }
 
 .who-left span{
@@ -263,7 +258,7 @@ letter-spacing:2px;
 .who-left h2{
 font-size:3rem;
 line-height:1.1;
-color:#07142e;
+color:white;
 margin-top:20px;
 }
 
@@ -274,15 +269,22 @@ gap:25px;
 }
 
 .who-card{
-background:white;
+background:rgba(255,255,255,.06);
 padding:35px;
 border-radius:22px;
-box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+border:1px solid rgba(255,255,255,.12);
+
+backdrop-filter:blur(16px);
+
+box-shadow:0 15px 40px rgba(0,0,0,.20);
 }
+
+
 
 .who-card h3{
 margin-bottom:15px;
-color:#07142e;
+color:white;
 }
 
 .who-card p{
@@ -293,7 +295,7 @@ color:#6b7280;
 
 .strategic-section{
 padding:120px 7%;
-background:white;
+background:linear-gradient(180deg,#04152f,#061b3f);
 }
 
 .strategic-content{
@@ -362,46 +364,6 @@ margin-bottom:15px;
 color:rgba(255,255,255,.75);
 }
 
-/* =========================
-   STATS
-========================= */
-
-.stats {
-    width: 86%;
-
-    margin: -55px auto 85px;
-
-    padding: 34px;
-
-    background: white;
-
-    border-radius: 22px;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 22px;
-
-    box-shadow:
-        0 18px 50px rgba(0,0,0,0.09);
-
-    position: relative;
-    z-index: 2;
-}
-
-.stat-card {
-    text-align: center;
-}
-
-.stat-card h3 {
-    font-size: 1.8rem;
-    color: #0d3b8e;
-    font-weight: 800;
-}
-
-.stat-card p {
-    color: #6b7280;
-}
 
 /* =========================
    SERVICES
@@ -489,69 +451,6 @@ box-shadow:
     margin: 0 26px 26px;
 }
 
-/* =========================
-   WHY LMV / ABOUT SECTIONS
-========================= */
-
-.why-lmv {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 55px;
-    padding: 100px 7%;
-    align-items: center;
-    background:
-linear-gradient(
-180deg,
-#061b3f,
-#04152f
-);
-}
-
-.why-content span {
-    color: #0d5bd7;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-}
-
-.why-content h2 {
-    font-size: 2.8rem;
-    line-height: 1.15;
-    margin: 16px 0 35px;
-    color: white;
-    letter-spacing: -1.5px;
-}
-
-.why-content p {
-    color: rgba(255,255,255,.75);
-    font-size: 1.03rem;
-    margin-bottom: 18px;
-}
-
-.features {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-}
-
-.feature {
-    background: #f6f8fc;
-    padding: 22px;
-    border-radius: 14px;
-    border: 1px solid #edf1f7;
-}
-
-.feature h4 {
-    margin-bottom: 8px;
-    color: #0f1d40;
-    font-size: 1.05rem;
-}
-
-.feature p {
-    color: #6b7280;
-    font-size: 0.95rem;
-}
 
 .why-image img,
 .about-image img,
@@ -562,62 +461,6 @@ linear-gradient(
     box-shadow: 0 18px 45px rgba(13, 59, 142, 0.14);
 }
 
-
-.impact-section{
-
-padding:140px 7%;
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:80px;
-
-align-items:center;
-
-background:
-
-linear-gradient(
-135deg,
-#f6f9ff,
-#ffffff
-);
-
-}
-
-.impact-text h2{
-
-font-size:4rem;
-
-line-height:1;
-
-letter-spacing:-3px;
-
-color:#07142e;
-
-margin-bottom:30px;
-
-}
-
-.impact-text p{
-
-font-size:1.05rem;
-
-line-height:1.9;
-
-color:#5c667a;
-
-}
-
-.impact-image img{
-
-height:550px;
-
-object-fit:cover;
-
-border-radius:35px;
-
-}
 
 /* =========================
    ABOUT / RESOURCES PAGES
