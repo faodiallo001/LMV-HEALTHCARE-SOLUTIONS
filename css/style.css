@@ -119,6 +119,13 @@ nav a:hover {
     color: #8cc7ff;
 }
 
+.menu-toggle{
+display:none;
+font-size:2rem;
+color:white;
+cursor:pointer;
+}
+
 /* =========================
    BUTTONS
 ========================= */
@@ -1116,6 +1123,30 @@ footer p {
 /* =========================
    RESPONSIVE - MOBILE
 ========================= */
+
+@media(max-width:768px){
+
+.desktop-nav{
+display:none;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.logo img{
+width:120px;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+}
+
+}
+
 
 @media (max-width:768px){
 
