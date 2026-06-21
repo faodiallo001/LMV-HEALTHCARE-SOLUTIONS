@@ -818,6 +818,44 @@ box-shadow:
    CTA
 ========================= */
 
+.cta{
+
+background:#ffffff;
+
+padding:72px 7%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:35px;
+
+border-top:1px solid #edf2f8;
+
+}
+
+.cta h2{
+
+color:#07142e;
+
+font-size:2.5rem;
+
+line-height:1.18;
+
+margin-bottom:10px;
+
+}
+
+.cta p{
+
+color:#6b7280;
+
+max-width:650px;
+
+}
+
 .cta .btn-light{
 
 background:
@@ -834,39 +872,6 @@ border:none;
 box-shadow:
 0 15px 40px rgba(0,119,255,.35);
 
-}
-
-.cta{
-border-top:1px solid #edf2f8;
-}
-
-.cta h2{
-color:#07142e;
-}
-
-.cta p{
-color:#6b7280;
-}
-
-.cta {
-    background:#ffffff;
-    color: #ffffff;
-    padding: 72px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 35px;
-}
-
-.cta h2 {
-    font-size: 2.5rem;
-    line-height: 1.18;
-    margin-bottom: 10px;
-}
-
-.cta p {
-    color: rgba(255, 255, 255, 0.88);
-    max-width: 650px;
 }
 
 /* =========================
