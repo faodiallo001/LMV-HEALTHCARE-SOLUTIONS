@@ -561,7 +561,12 @@ box-shadow:
 }
 
 .about-text p,
-.mission-section p,
+.mission-section p {
+    color:#8cc7ff;
+    font-size: 1.03rem;
+    margin-bottom: 16px;
+}
+
 .leadership-text p {
     color:white;
     font-size: 1.03rem;
