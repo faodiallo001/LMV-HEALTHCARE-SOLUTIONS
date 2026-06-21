@@ -568,6 +568,19 @@ box-shadow:
     margin-bottom: 16px;
 }
 
+.contact-text h2{
+    font-size:2.5rem;
+    color:#0f1d40;
+    margin-bottom:20px;
+    letter-spacing:-1px;
+}
+
+.contact-text p{
+    color:#4b5563;
+    font-size:1.03rem;
+    margin-bottom:16px;
+}
+
 .mission-section {
     background: #f6f8fc;
     text-align: center;
